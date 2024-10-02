@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesús Noguera | Portafolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .profile-photo {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+        .section-title {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            color: #007bff;
+        }
+        .profile-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .profile-info img {
+            max-width: 200px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand animate__animated animate__lightSpeedInRight" href="#">Jesús Noguera | Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#info">Mi Información</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Mis Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hobbies">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contáctame</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Information Section -->
+    <section id="info" class="container mt-5">
+        <div class="profile-info">
+            <img src="https://img.freepik.com/fotos-premium/extraterrestre-traje_777078-25109.jpg" alt="Foto de Jesús Noguera" class="profile-photo">
+            <div>
+                <h2 class="animate__animated animate__zoomInDown">Jesús Noguera</h2>
+                <p>Estudiante de el Bachiller Tecnico en Informatica. Apasionado por la programación, la resolución de problemas y la creación de soluciones innovadoras. Me encanta trabajar en proyectos que desafían mis habilidades y me permiten crecer como estudiante.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mt-5">
+        <div class="section-title">Mis Proyectos</div>
+        <ul>
+            <li>
+                <strong>Jobs City:</strong> Aplicación de bolsa de empleos creada con la plataforma Adalo.
+                <img src="List@s para esta aventura.png" alt="Código QR que dirige a la aplicación" width="100" height="100">
+            </li>
+            <li>
+                <strong>HealthyMind:</strong> Página web que brinda información sobre la ansiedad, hecha con HTML, CSS y JavaScript. 
+                <a href="https://jesnog0204.github.io/HealthyMind/" target="_blank">Visitar</a>
+            </li>
+            <li>
+                <strong>Juego de sumas:</strong> Proyecto hecho en con Python.
+                <pre>
+from random import randint
+puntos = 0
+
+def menu():
+    print("¡Bienvenido a este juego matemático!")
+    print("Si respondes correctamente, obtendrás 1 punto.")
+    print("Si te equivocas, se restará 1 punto.")
+    print("¡Tranquil@, tendrás pequeñas pistas!")
+    print("1. Empezar")
+    print("2. Salir")
+    opcion = input("Elige una opción:")
+    if opcion == '1':
+        empezar()
+    else:
+        print("Gracias por jugar. Has salido del juego")
+
+def empezar():
+    global puntos
+    n1 = randint(1, 100)
+    n2 = randint(1, 100)
+    suma = n1 + n2
+    
+    print("A ver si puedes con esto:")
+    rta = int(input(f"¿Cuánto es {n1} + {n2}?: "))
+    
+    if rta == suma:
+        print("¡Correcto! ¡Has acertado!")
+        puntos += 1
+    else:
+        print("¡Te has equivocado!")
+        puntos -= 1
+    
+    print(f"Puntos actuales: {puntos}")
+    menu()
+
+menu()
+                </pre>
+            </li>
+            <li>
+                <strong>Juego de sumas en Scratch:</strong> Un juego hecho con la plataforma Scratch. 
+                <img src="juego matematico.png" alt="Es un juego creado con la plataforma Scratch" width="100" height="100">
+            </li>
+            <li>
+                <strong>Página web:</strong> Página web con el proceso de elaboración de un brazo hidráulico.
+                <a href="https://jesnog0204.github.io/Brazo-Hidraulico/" target="_blank">Visitar</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="container mt-5">
+        <div class="section-title">Hobbies</div>
+        <ul>
+            <li>Programar</li>
+            <li>Ir al GYM</li>
+            <li>Ver series y películas</li>
+            <li>Leer libros</li>
+            <li>Practicar inglés</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+        <div class="section-title">Contáctame</div>
+        <div class="row">
+            <!-- WhatsApp Card -->
+            <div class="col-md-4">
+                <div class="card mb-4 text-center">
+                    <img src="https://img.icons8.com/color/96/000000/whatsapp.png" class="card-img-top" alt="WhatsApp Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">WhatsApp</h5>
+                        <p class="card-text">Envíame un mensaje por WhatsApp.</p>
+                        <a href="https://wa.me/598985524206" class="btn btn-success" target="_blank">Contactar por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Gmail Card -->
+            <div class="col-md-4">
+                <div class="card mb-4 text-center">
+                    <img src="https://img.icons8.com/color/96/000000/gmail-new.png" class="card-img-top" alt="Gmail Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Correo Electrónico</h5>
+                        <p class="card-text">Envíame un correo a mi dirección Gmail.</p>
+                        <a href="mailto:jesnog0204@gmail.com" class="btn btn-danger" target="_blank">Enviar Email</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Instagram Card -->
+            <div class="col-md-4">
+                <div class="card mb-4 text-center">
+                    <img src="https://img.icons8.com/fluency/96/000000/instagram-new.png" class="card-img-top" alt="Instagram Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Instagram</h5>
+                        <p class="card-text">Sígueme en Instagram para conocer más de mí.</p>
+                        <a href="https://www.instagram.com/jesus_nnoguera" class="btn btn-primary" target="_blank">Ir a Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
